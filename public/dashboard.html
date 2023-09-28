@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Food Delivery</title>
+    <style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.menu, .order-form {
+    flex: 1;
+    padding: 1rem;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 1rem;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 1rem;
+}
+
+.order-button, button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.order-button:hover, button[type="submit"]:hover {
+    background-color: #555;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin-bottom: 0.5rem;
+}
+
+select, input[type="number"] {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Online Food Delivery</h1>
+    </header>
+    <main>
+        <section class="menu">
+            <h2>Menu</h2>
+            <ul>
+                <li>
+                    <h3>Goan Fish Biryani</h3>
+                    <p>Delicious Goan Fish Biryani.</p>
+                </li>
+                <li>
+                    <h3>Bombay Biryani</h3>
+                    <p>Authentic Bombay Biryani.</p>
+                </li>
+                <li>
+                    <h3>Sindhi Biryani</h3>
+                    <p>Spicy Sindhi Biryani.</p>
+                </li>
+                <li>
+                    <h3>Lucknow Biryani</h3>
+                    <p>Delicate Lucknow Biryani.</p>
+                </li>
+                <li>
+                    <h3>Kolkata Biryani</h3>
+                    <p>Flavorful Kolkata Biryani.</p>
+                </li>
+                <li>
+                    <h3>Hyderabadi Biryani</h3>
+                    <p>Spicy Hyderabadi Biryani.</p>
+                </li>
+                <li>
+                    <h3>Mixed Biryani</h3>
+                    <p>Assorted Mixed Biryani.</p>
+                </li>
+            </ul>
+        </section>
+        <section class="order-form">
+            <h2>Order Form</h2>
+            
+<form id="food-order-form" action="/order" method="post">
+                <label for="item">Item:</label>
+                <select id="item" name="selected">
+                    <option value="Goan Fish Biryani">Goan Fish Biryani</option>
+                    <option value="Bombay Biryani">Bombay Biryani</option>
+                    <option value="Sindhi Biryani">Sindhi Biryani</option>
+                    <option value="Lucknow Biryani">Lucknow Biryani</option>
+                    <option value="Kolkata Biryani">Kolkata Biryani</option>
+                    <option value="Hyderabadi Biryani">Hyderabadi Biryani</option>
+                    <option value="Mixed Biryani">Mixed Biryani</option>
+                </select>
+                <label for="quantity">Quantity:</label>
+                <select id="quantity" name="quantity">
+                    <option value="Half">Half</option>
+                    <option value="Full">Full</option>
+                    <option value="Family Pack">Family Pack</option>
+                </select>
+                <button type="submit">Place Order</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Online Food Delivery</p>
+    </footer>
+   
+</body>
+</html>
